@@ -1,0 +1,1 @@
+ImageLoader说明--至少2级缓存-图片缩放-预览菜单重载-支持读取网络、内存、内容提供者、Assets、Drawable-universal-image-loader.txt

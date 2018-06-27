@@ -27,8 +27,10 @@ android {
 }
 
 
+
+
 buildscript {
-    repositories {
+    repositories { //根目录下的 allprojects
         mavenLocal()
         maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
         maven { url 'http://maven.aliyun.com/nexus/content/repositories/central/' }

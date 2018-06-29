@@ -16,17 +16,29 @@ buildscript {
 }
 allprojects {
     repositories {
+        // 如果有新的库引入,尽量把慢的放在后面
+
+        // 前4个推荐的 jitpack.io
         mavenLocal()
-        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
-        maven { url 'http://maven.aliyun.com/nexus/content/repositories/central/' }
-        maven { url 'https://repo1.maven.org/maven2/' }
-        maven { url "http://oss.sonatype.org/content/repositories/snapshots" }
-        maven { url "https://jitpack.io" }
-        jcenter { url "http://jcenter.bintray.com/" }
-        maven { url 'http://repo.jfrog.org/artifactory/gradle-plugins' }
-        maven { url "https://maven.google.com" }
         mavenCentral()
         jcenter()
+        google()
+
+        maven { url 'http://maven.aliyun.com/nexus/content/groups/public/' }
+
+        maven { url 'https://repo1.maven.org/maven2/' }
+
+        maven { url "https://jitpack.io" }
+
+        jcenter { url "http://jcenter.bintray.com/" }
+
+        maven { url 'http://repo.jfrog.org/artifactory/gradle-plugins' }
+
+        maven { url "http://oss.sonatype.org/content/repositories/snapshots" }
+
+        maven { url 'http://maven.aliyun.com/nexus/content/repositories/central/' }
+
+//        如果有新的库引入,尽量把慢的放在后面
     }
 }
 
